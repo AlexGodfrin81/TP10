@@ -13,11 +13,12 @@ public class DiscountCodeENtity {
     
     String code;
     float taux;
+    String format;
     
     public DiscountCodeENtity(String n, float m){
         this.code = n;
         this.taux = m;
-        
+        this.format = String.format("%.2f", m)+" %";
     }
     
     public String getCode(){
